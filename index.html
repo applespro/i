@@ -1,7 +1,7 @@
 <html lang=en>
   <head>
     <meta charset=utf-8>
-    <title>S</title>
+    <title>Chatkit demo</title>
   </head>
   <body>
     <ul id="message-list"></ul>
@@ -9,14 +9,15 @@
       <input type='text' id='message-text'>
       <input type="submit">
     </form>
+
     <script src="https://unpkg.com/@pusher/chatkit-client@1/dist/web/chatkit.js"></script>
     <script>
       const tokenProvider = new Chatkit.TokenProvider({
-        url: "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/8faf33e5-6aff-4836-b342-30e1b6da3ebf/token"
+        url: "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/dfc5f130-9316-4a4b-b995-23d1b06a8961/token"
       });
       const chatManager = new Chatkit.ChatManager({
-        instanceLocator: "v1:us1:8faf33e5-6aff-4836-b342-30e1b6da3ebf",
-        userId: "apple",
+        instanceLocator: "v1:us1:dfc5f130-9316-4a4b-b995-23d1b06a8961",
+        userId: "*",
         tokenProvider: tokenProvider
       });
 
